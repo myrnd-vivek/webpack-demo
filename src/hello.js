@@ -4,5 +4,5 @@ debugger;
 
 console.log(x);
 
-const x = 10;
-x = 15;
+// const x = 10;
+// x = 15;

@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-                git branch: 'main', credentialsId: '7a631de6-c697-4695-b6a7-bfc9253b864f', url: 'https://github.com/myrnd-vivek/webpack-demo.git'
-            }
-        }
         stage('Build') {
             steps {
                 echo 'Building'

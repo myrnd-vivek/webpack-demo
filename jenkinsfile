@@ -2,27 +2,27 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building',
-                npm install,
-                npm run build,
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing'
-            }
-        }
-        stage('Release') {
-            steps {
-                echo 'Releasing'
-            }
-        }
-    }
+      stage('Build') {
+          steps {
+              echo 'Building',
+              // npm install,
+              // npm run build,
+          }
+      }
+      stage('Deploy') {
+          steps {
+              echo 'Deploying'
+          }
+      }
+      stage('Test') {
+          steps {
+              echo 'Testing'
+          }
+      }
+      stage('Release') {
+          steps {
+              echo 'Releasing'
+          }
+      }
+  }
 }
